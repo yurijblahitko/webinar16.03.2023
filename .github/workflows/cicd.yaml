@@ -30,6 +30,6 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/yurijblahitko/webinar_prometheus:latest
+          tags: ghcr.io/yurijblahitko/webinar_prometheus:sha256:e8e1b40b7a3185d12da87f551b20879f47b832da9a5e59f7d0a43ce584372a26
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
